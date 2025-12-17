@@ -2,11 +2,14 @@ name: Belajar CI Dasar
 
 on:
   push:
-   branches: ["main"]
+    branches: ["main"]
+
+  pull_request:
+    branches: ["main"]
 
 jobs:
   hello-job:
-   runs-on: ubuntu-latest
-   steps:
-     - name: Say Hello
-       run: echo "Hello World (Github Actions)"
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say Hello
+        run: echo "Hello World (Github Actions)"
