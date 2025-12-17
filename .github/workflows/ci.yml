@@ -22,6 +22,3 @@ jobs:
             echo "User $(whoami)"
             echo "OS info:"
             uname -a
-            
-      - name: Force error
-        run: exit 1
