@@ -1,0 +1,12 @@
+name: Belajar CI Dasar
+
+on:
+  push:
+   branches: ["main"]
+
+jobs:
+  hello-job:
+   runs-on: ubuntu-latest
+   steps:
+     - name: Say Hello
+       run: echo "Hello World (Github Actions)"
