@@ -13,3 +13,12 @@ jobs:
     steps:
       - name: Say Hello
         run: echo "Hello World (Github Actions)"
+
+  info-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Show System Info
+        run: |
+            echo "User $(whoami)"
+            echo "OS info:"
+            uname -a
